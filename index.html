@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fake God, Fake News</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="stage">
+
+  <!-- ============ SLIDE 1: INICIO ============ -->
+  <section class="screen" id="screen-inicio" data-screen="inicio">
+    <div class="halftone-corner tl"></div>
+    <div class="halftone-corner br"></div>
+
+    <div class="crest" aria-hidden="true">
+      <svg viewBox="0 0 120 120" class="crest-svg">
+        <circle cx="60" cy="60" r="54" fill="var(--forest)" stroke="var(--ink)" stroke-width="4"/>
+        <path d="M20 46 C 30 10, 45 10, 42 40 C 55 20, 65 20, 60 42 C 78 18, 92 22, 82 48 L 60 58 Z" fill="var(--gold)" stroke="var(--ink)" stroke-width="3.5" stroke-linejoin="round"/>
+        <path d="M100 46 C 90 10, 75 10, 78 40 C 65 20, 55 20, 60 42 C 42 18, 28 22, 38 48 L 60 58 Z" fill="var(--gold)" stroke="var(--ink)" stroke-width="3.5" stroke-linejoin="round"/>
+        <ellipse cx="60" cy="72" rx="20" ry="24" fill="var(--parchment)" stroke="var(--ink)" stroke-width="3.5"/>
+        <path d="M50 68 q10 10 20 0" stroke="var(--ink)" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <circle cx="52" cy="60" r="3.2" fill="var(--ink)"/>
+        <circle cx="68" cy="60" r="3.2" fill="var(--ink)"/>
+      </svg>
+    </div>
+
+    <p class="eyebrow">un juego para desenmascarar mentiras</p>
+    <h1 class="title-hero">FAKE GOD,<br>FAKE NEWS</h1>
+    <p class="lede">Loki, el embaucador nórdico, ha sembrado la red de noticias falsas.
+      Aprende sus trucos y demuestra que ninguna mentira puede engañarte dos veces.</p>
+
+    <div class="btn-row">
+      <button class="btn btn--gold" data-goto="aprender">
+        <span class="btn-num">I</span> Aprender
+      </button>
+      <button class="btn btn--forest" data-goto="jugar">
+        <span class="btn-num">II</span> Jugar
+      </button>
+    </div>
+
+    <p class="footnote">Basado en las especificaciones originales del proyecto · Estilo cómic nórdico</p>
+  </section>
+
+  <!-- ============ SLIDE 2: APRENDER ============ -->
+  <section class="screen screen--hidden" id="screen-aprender" data-screen="aprender">
+    <header class="panel-header">
+      <span class="tag">Capítulo I</span>
+      <h2 class="title-panel">Las señales del embaucador</h2>
+      <p class="panel-sub">Toda mentira deja huellas. Estas son las que Loki no puede esconder.</p>
+    </header>
+
+    <div class="learn-grid">
+      <ul class="trait-list">
+        <li class="trait">
+          <span class="trait-icon">!</span>
+          <div><strong>Titulares que gritan.</strong> Mayúsculas, signos de exclamación y palabras como "URGENTE" o "no lo creerás" buscan que reacciones antes de pensar.</div>
+        </li>
+        <li class="trait">
+          <span class="trait-icon">?</span>
+          <div><strong>Sin fuente verificable.</strong> No hay autor, medio reconocido, fecha ni datos que puedas rastrear y confirmar.</div>
+        </li>
+        <li class="trait">
+          <span class="trait-icon">⏱</span>
+          <div><strong>Urgencia fabricada.</strong> Te empuja a compartir "antes de que lo borren", apelando al miedo o al asombro inmediato.</div>
+        </li>
+        <li class="trait">
+          <span class="trait-icon">✎</span>
+          <div><strong>Errores notorios.</strong> Faltas de ortografía, gramática torpe o imágenes editadas de forma evidente.</div>
+        </li>
+        <li class="trait">
+          <span class="trait-icon">⛓</span>
+          <div><strong>Dominio disfrazado.</strong> La dirección web imita a un medio real, pero con letras cambiadas o extensiones extrañas.</div>
+        </li>
+        <li class="trait">
+          <span class="trait-icon">✕</span>
+          <div><strong>Nadie más lo reporta.</strong> Ningún medio serio confirma la noticia y no aparece en verificadores como las agencias de fact-checking.</div>
+        </li>
+      </ul>
+
+      <div class="example-card">
+        <div class="example-card__bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="example-card__url">noticia-viral.info</span>
+        </div>
+        <div class="example-card__body">
+          <div class="example-card__img" aria-hidden="true">
+            <svg viewBox="0 0 200 120">
+              <rect width="200" height="120" fill="#dfe8dd"/>
+              <circle cx="70" cy="55" r="22" fill="var(--forest)"/>
+              <rect x="105" y="35" width="14" height="55" fill="var(--ink)"/>
+              <circle cx="112" cy="30" r="8" fill="var(--ink)"/>
+            </svg>
+          </div>
+          <h3>¡¡ALIENÍGENAS FUERON VISTOS CAMINANDO POR EL ZÓCALO AYER POR LA NOCHE!! 👽🚨</h3>
+          <p>Testigos annonimos aseguran ke el gobierno oculta la verdad. Compártelo antes de ke lo censuren!!!</p>
+        </div>
+        <div class="example-card__flags">
+          <span class="flag">Mayúsculas + emojis</span>
+          <span class="flag">Sin fuente</span>
+          <span class="flag">Urgencia falsa</span>
+          <span class="flag">Errores ortográficos</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="btn-row">
+      <button class="btn btn--ghost" data-goto="inicio">← Volver al inicio</button>
+      <button class="btn btn--forest" data-goto="jugar">Ir a jugar →</button>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 3: JUGAR ============ -->
+  <section class="screen screen--hidden" id="screen-jugar" data-screen="jugar">
+    <header class="panel-header panel-header--tight">
+      <span class="tag">Capítulo II</span>
+      <h2 class="title-panel">¿Es Fake New?</h2>
+      <div class="progress-wrap">
+        <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+        <span class="progress-count" id="progress-count">1 / 5</span>
+      </div>
+    </header>
+
+    <div class="game-grid">
+      <div class="news-card" id="news-card">
+        <div class="news-card__bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="news-card__url" id="news-url">medio-informativo.com</span>
+        </div>
+        <div class="news-card__img" id="news-img" aria-hidden="true"></div>
+        <h3 class="news-card__headline" id="news-headline">Titular de la noticia</h3>
+        <p class="news-card__body" id="news-body">Cuerpo de la noticia de ejemplo.</p>
+      </div>
+
+      <div class="verdict-col">
+        <button class="verdict-btn verdict-btn--true" id="btn-verdadero">
+          <span class="verdict-icon">✓</span> Verdadero
+        </button>
+        <button class="verdict-btn verdict-btn--false" id="btn-falso">
+          <span class="verdict-icon">✕</span> Falso
+        </button>
+        <p class="hint">Presiona un botón para dar tu veredicto</p>
+      </div>
+    </div>
+
+    <div class="feedback-banner" id="feedback-banner">
+      <p class="feedback-title" id="feedback-title">¡Correcto!</p>
+      <p class="feedback-text" id="feedback-text">Explicación aquí.</p>
+      <button class="btn btn--gold btn--small" id="btn-next">Siguiente →</button>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 4: FIN DEL JUEGO ============ -->
+  <section class="screen screen--hidden" id="screen-fin" data-screen="fin">
+    <div class="halftone-corner tl"></div>
+    <div class="halftone-corner br"></div>
+
+    <span class="tag">Fin del juego</span>
+    <h2 class="title-panel title-panel--big">Veredicto final</h2>
+
+    <div class="score-plate">
+      <span class="score-number" id="score-number">0/5</span>
+      <p class="score-msg" id="score-msg">Mensaje de resultado.</p>
+    </div>
+
+    <div class="btn-row">
+      <button class="btn btn--forest" data-goto="jugar" id="btn-replay">↻ Volver a jugar</button>
+      <button class="btn btn--ghost" data-goto="inicio">← Volver al inicio</button>
+    </div>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
